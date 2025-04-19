@@ -42,8 +42,12 @@ FooterLabel.TextScaled = true
 FooterLabel.Parent = Frame
 
 MainButton.MouseButton1Click:Connect(function()
-    print("button pressed!")
+    local args = {
+    [1] = "Horse"
+}
 
+game:GetService("ReplicatedStorage"):WaitForChild("Shared"):WaitForChild("RemotePromise"):WaitForChild("Remotes"):WaitForChild("C_BuyClass"):FireServer(unpack(args))
+    end)
     MainButton.Text = "Role gived!"
         
     wait(5)

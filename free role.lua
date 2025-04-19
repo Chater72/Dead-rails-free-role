@@ -47,7 +47,7 @@ MainButton.MouseButton1Click:Connect(function()
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Shared"):WaitForChild("RemotePromise"):WaitForChild("Remotes"):WaitForChild("C_BuyClass"):FireServer(unpack(args))
-    end)
+        
     MainButton.Text = "Role gived!"
         
     wait(5)
